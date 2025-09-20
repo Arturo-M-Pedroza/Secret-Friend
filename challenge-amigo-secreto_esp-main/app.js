@@ -28,8 +28,9 @@ function sortearAmigo() {
         alert("No hay amigos en la lista.");
         return;
     } else {
-        let randomIndex = Math.floor(Math.random() * friends.length) + 1;
-        randomFriend = friends[randomIndex];
+        let randomIndex = Math.floor(Math.random() * friends.length);
+        let randomFriend = friends[randomIndex];
+        console.log(randomIndex);
         document.getElementById("resultado").innerHTML = "Tu amigo seleccionado es: " + randomFriend;
 
     }
